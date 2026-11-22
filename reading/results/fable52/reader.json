@@ -1,0 +1,9 @@
+{
+ "backend": "claude",
+ "model": "claude-fable-5-2",
+ "effort": "high",
+ "base_url": null,
+ "max_tokens": null,
+ "reasoning_effort": null,
+ "samples": 10
+}

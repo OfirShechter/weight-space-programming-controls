@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+
+# Local Jekyll preview of docs/
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/Gemfile.lock
+docs/vendor/
+
+.DS_Store
+Thumbs.db
+
+.mcp.json
+.history

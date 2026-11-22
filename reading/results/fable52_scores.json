@@ -1,0 +1,783 @@
+{
+ "summary": {
+  "c0_original": {
+   "n": 12,
+   "correct": 12,
+   "mean_conf": 84.1,
+   "per_game": {
+    "breakout": "3/3",
+    "freeway": "3/3",
+    "pacman": "3/3",
+    "pong": "3/3"
+   }
+  },
+  "c1_permuted": {
+   "n": 8,
+   "correct": 8,
+   "mean_conf": 82.5,
+   "per_game": {
+    "breakout": "2/2",
+    "freeway": "2/2",
+    "pacman": "2/2",
+    "pong": "2/2"
+   }
+  },
+  "c2_erased": {
+   "n": 16,
+   "correct": 15,
+   "mean_conf": 74.4,
+   "per_game": {
+    "breakout": "4/4",
+    "freeway": "4/4",
+    "pacman": "3/4",
+    "pong": "4/4"
+   }
+  },
+  "c2b_erased_mix": {
+   "n": 40,
+   "correct": 26,
+   "mean_conf": 50.0,
+   "per_game": {
+    "breakout": "0/10",
+    "freeway": "10/10",
+    "pacman": "7/10",
+    "pong": "9/10"
+   }
+  },
+  "c5_map_only": {
+   "n": 20,
+   "correct": 20,
+   "mean_conf": 80.3,
+   "per_game": {
+    "breakout": "5/5",
+    "freeway": "5/5",
+    "pacman": "5/5",
+    "pong": "5/5"
+   }
+  }
+ },
+ "runs": {
+  "c0_original": {
+   "breakout": [
+    {
+     "answer": "Breakout (MinAtar-style: paddle on the bottom row, ball with trail, three rows of bricks).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 129
+    },
+    {
+     "answer": "Breakout (MinAtar-style Breakout on a small grid: bottom-row paddle, bouncing ball with trail, three rows of bricks at the top).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 112
+    },
+    {
+     "answer": "Breakout (MinAtar-style Breakout on a walled 10 \u00d7 10 grid).",
+     "correct": true,
+     "conf": 90,
+     "no_maze": false,
+     "sec": 93
+    }
+   ],
+   "freeway": [
+    {
+     "answer": "Frogger-style road crossing (equivalently Atari Freeway with sideways movement allowed).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 129
+    },
+    {
+     "answer": "Frogger, road-crossing only (equivalently Atari Freeway with sideways movement allowed).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 178
+    },
+    {
+     "answer": "Frogger, road-only (essentially Atari Freeway with sideways movement).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 181
+    }
+   ],
+   "pacman": [
+    {
+     "answer": "Pac-Man (a mini maze pellet-collecting game with ghosts).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 63
+    },
+    {
+     "answer": "Pac-Man (a small-grid maze variant with pellets and chasing ghosts).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 81
+    },
+    {
+     "answer": "Pac-Man (a mini maze version: pellet collecting with ghosts).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 58
+    }
+   ],
+   "pong": [
+    {
+     "answer": "Pong, most likely a single-player squash or wall-ball variant, with the paddle in the left column and the right wall as the target.",
+     "correct": true,
+     "conf": 75,
+     "no_maze": false,
+     "sec": 91
+    },
+    {
+     "answer": "Pong \u2014 a single-player version with the paddle on the left edge and the ball bouncing around the court. The right wall is the target side.",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 150
+    },
+    {
+     "answer": "Pong \u2014 most likely a single-player, squash-style version with a vertical paddle on the left edge and a ball bouncing around the field.",
+     "correct": true,
+     "conf": 80,
+     "no_maze": false,
+     "sec": 99
+    }
+   ]
+  },
+  "c1_permuted": {
+   "breakout": [
+    {
+     "answer": "Breakout (MinAtar-style brick breaker).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 114
+    },
+    {
+     "answer": "Breakout (MinAtar-style: paddle on the bottom row, bouncing ball, three rows of bricks at the top).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 88
+    }
+   ],
+   "freeway": [
+    {
+     "answer": "Freeway (the Atari / MinAtar road-crossing game, a Frogger-style \"chicken crosses the road\") on an 8\u00d78 field with six lanes of traffic.",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 148
+    },
+    {
+     "answer": "Freeway (the Atari / MinAtar \"chicken crossing the road\" game), a Frogger-style road crossing.",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 104
+    }
+   ],
+   "pacman": [
+    {
+     "answer": "Pac-Man, as a miniature 8\u00d78 symmetric maze with pellets and ghosts.",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 61
+    },
+    {
+     "answer": "Pac-Man \u2014 a small-grid maze version with pellets and ghosts.",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 86
+    }
+   ],
+   "pong": [
+    {
+     "answer": "Pong \u2014 most likely the single-player version (squash / wall-Pong), with the paddle on the left edge and the target wall or goal line on the right.",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 108
+    },
+    {
+     "answer": "Pong \u2014 a sideways, single-paddle version, with the agent's paddle in the left column and a ball bouncing around the court toward a target wall on the right.",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 108
+    }
+   ]
+  },
+  "c2_erased": {
+   "breakout": [
+    {
+     "answer": "Breakout (Atari-style brick breaker), with three rows of bricks at the top and a paddle on the bottom row.",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 151
+    },
+    {
+     "answer": "Breakout (a MinAtar-style version: paddle on row 8, three rows of bricks in rows 1\u20133, one ball).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 160
+    },
+    {
+     "answer": "Breakout (a MinAtar-style brick-breaker).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 117
+    },
+    {
+     "answer": "Breakout (a MinAtar-style brick-breaker on the 8 \u00d7 8 playfield).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 135
+    }
+   ],
+   "freeway": [
+    {
+     "answer": "Frogger (a road-crossing game, as in Freeway or Crossy Road).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 224
+    },
+    {
+     "answer": "Frogger-style road crossing (the road half of Frogger, also close to Atari Freeway but with four-way movement).",
+     "correct": true,
+     "conf": 77,
+     "no_maze": false,
+     "sec": 205
+    },
+    {
+     "answer": "A Frogger / Freeway-style road-crossing game. The agent starts in the bottom row (row 8), must cross six traffic lanes (rows 2\u20137, two cars per lane spaced 4 apa",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 196
+    },
+    {
+     "answer": "Frogger (a Freeway-style road crossing).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 259
+    }
+   ],
+   "pacman": [
+    {
+     "answer": "A Pac-Man-style game on an open 8\u00d78 board with no interior maze walls \u2014 collect pellets or coins while avoiding roaming enemies (\"ghosts\").",
+     "correct": true,
+     "conf": 40,
+     "no_maze": true,
+     "sec": 209
+    },
+    {
+     "answer": "Pac-Man (a small maze version: four corner wall blocks and a central block, ghosts, pellets).",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 662
+    },
+    {
+     "answer": "A Pac-Man-style collect-and-evade game on an open 8\u00d78 field with no maze walls: pick up pellets or coins while avoiding a chasing ghost or enemy.",
+     "correct": true,
+     "conf": 50,
+     "no_maze": true,
+     "sec": 326
+    },
+    {
+     "answer": "A collect-and-avoid arena game, closest to Pac-Man without maze walls (pellets or coins plus a chasing ghost or enemy).",
+     "correct": false,
+     "conf": 45,
+     "no_maze": true,
+     "sec": 288
+    }
+   ],
+   "pong": [
+    {
+     "answer": "Pong (single-player, squash-style): a paddle in the left column (column 1) moving up and down against a ball that bounces around the walled field.",
+     "correct": true,
+     "conf": 77,
+     "no_maze": false,
+     "sec": 192
+    },
+    {
+     "answer": "Pong \u2014 a single-player (wall or squash-style) version with the paddle on the left edge and the ball bouncing off the right wall.",
+     "correct": true,
+     "conf": 80,
+     "no_maze": false,
+     "sec": 171
+    },
+    {
+     "answer": "Pong \u2014 single-player, with a vertical paddle on the left edge (column 1) and a ball bouncing around the field; the right wall is marked as the target side.",
+     "correct": true,
+     "conf": 80,
+     "no_maze": false,
+     "sec": 222
+    },
+    {
+     "answer": "Pong, rotated so the agent's paddle moves up and down along the left edge (column 1) and the target wall or opponent side is the right edge. Most likely the sin",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 159
+    }
+   ]
+  },
+  "c2b_erased_mix": {
+   "breakout": [
+    {
+     "answer": "An open-field \"collect the coins while dodging moving hazards\" game \u2014 a falling-object dodger with pickups (roughly Pac-Man without walls, with hazards that fal",
+     "correct": false,
+     "conf": 35,
+     "no_maze": false,
+     "sec": 977
+    },
+    {
+     "answer": "An open-arena collect-and-avoid game \u2014 closest to Pac-Man without maze walls (or MinAtar Asterix).",
+     "correct": false,
+     "conf": 25,
+     "no_maze": true,
+     "sec": 2655
+    },
+    {
+     "answer": "A collect-and-avoid game on an open grid: pick up scattered coins or pellets while avoiding moving enemies. The closest well-known game is Pac-Man, in a wall-le",
+     "correct": false,
+     "conf": 40,
+     "no_maze": false,
+     "sec": 631
+    },
+    {
+     "answer": "A Pac-Man-style game: an open 8\u00d78 arena with pellets or coins to collect and moving ghosts or enemies to avoid, with no interior maze walls.",
+     "correct": false,
+     "conf": 40,
+     "no_maze": true,
+     "sec": 1861
+    },
+    {
+     "answer": "A falling-objects catch/dodge game \u2014 closest to Catch (Kaboom-style), in a variant with a free-moving agent and both reward items and other falling objects.",
+     "correct": false,
+     "conf": 40,
+     "no_maze": false,
+     "sec": 2962
+    },
+    {
+     "answer": "A Pac-Man-style pellet-collection game on an open 8\u00d78 board (no maze walls), with moving ghosts/enemies.",
+     "correct": false,
+     "conf": 35,
+     "no_maze": true,
+     "sec": 1165
+    },
+    {
+     "answer": "Snake, with the head as the agent, the body segments in the moving-object channel and one food pellet as the reward target.",
+     "correct": false,
+     "conf": 62,
+     "no_maze": false,
+     "sec": 1447
+    },
+    {
+     "answer": "Pac-Man-like, on an open 8\u00d78 board with no maze walls. The nearest alternative is an Asterix-style collect-and-dodge.",
+     "correct": false,
+     "conf": 25,
+     "no_maze": true,
+     "sec": 2211
+    },
+    {
+     "answer": "An open-arena dodge-and-collect game: a free-moving agent picks up reward items while avoiding objects that fall down the grid. The closest well-known relatives",
+     "correct": false,
+     "conf": 35,
+     "no_maze": false,
+     "sec": 2156
+    },
+    {
+     "answer": "A free-roaming \"dodge the falling objects and collect the rewards\" game, of the Dodger/Avalanche type (a Catch/Dodge hybrid). This is my best guess, not a confi",
+     "correct": false,
+     "conf": 30,
+     "no_maze": false,
+     "sec": 2087
+    }
+   ],
+   "freeway": [
+    {
+     "answer": "Frogger \u2014 a road-crossing game with six lanes of wrapping traffic (rows 2\u20137), start at the bottom row, goal row at the top.",
+     "correct": true,
+     "conf": 82,
+     "no_maze": false,
+     "sec": 1098
+    },
+    {
+     "answer": "A Frogger-style traffic-crossing game (Freeway / Crossy Road family): horizontal wrap-around lanes of cars filling the board, with a single reward cell to reach",
+     "correct": true,
+     "conf": 55,
+     "no_maze": false,
+     "sec": 1182
+    },
+    {
+     "answer": "Frogger (an Atari Freeway-style road-crossing game).",
+     "correct": true,
+     "conf": 66,
+     "no_maze": false,
+     "sec": 1273
+    },
+    {
+     "answer": "Frogger (a Freeway-style road-crossing game with left/right movement).",
+     "correct": true,
+     "conf": 60,
+     "no_maze": false,
+     "sec": 1023
+    },
+    {
+     "answer": "Frogger (Freeway-style road crossing).",
+     "correct": true,
+     "conf": 65,
+     "no_maze": false,
+     "sec": 995
+    },
+    {
+     "answer": "Frogger \u2014 a road-crossing game in the Frogger / Atari Freeway family, with six traffic lanes (rows 2\u20137), two cars per lane, and a 2D-moving agent.",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 434
+    },
+    {
+     "answer": "Frogger / Freeway-style road crossing.",
+     "correct": true,
+     "conf": 65,
+     "no_maze": false,
+     "sec": 601
+    },
+    {
+     "answer": "Frogger (Atari Freeway-style road crossing).",
+     "correct": true,
+     "conf": 55,
+     "no_maze": false,
+     "sec": 611
+    },
+    {
+     "answer": "Frogger, a Freeway-style road-crossing game (MinAtar Freeway is the closest known grid version, but here the agent can also move left and right).",
+     "correct": true,
+     "conf": 60,
+     "no_maze": false,
+     "sec": 436
+    },
+    {
+     "answer": "Frogger, in its road-only form (closest to Atari Freeway): cross lanes of wrapping traffic from the bottom row to the top.",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 796
+    }
+   ],
+   "pacman": [
+    {
+     "answer": "A Pac-Man-like collect-and-avoid game in an open 8\u00d78 arena with no maze walls: pick up scattered pellets or coins while enemies (\"ghosts\") roam or chase.",
+     "correct": true,
+     "conf": 45,
+     "no_maze": true,
+     "sec": 386
+    },
+    {
+     "answer": "A Pac-Man-like collect-and-avoid game on an open 8\u00d78 arena (no maze walls): pick up pellets or coins while evading moving enemies.",
+     "correct": true,
+     "conf": 35,
+     "no_maze": true,
+     "sec": 544
+    },
+    {
+     "answer": "A Pac-Man-style collect-and-avoid game in an open 8\u00d78 arena with no maze walls.",
+     "correct": true,
+     "conf": 50,
+     "no_maze": true,
+     "sec": 342
+    },
+    {
+     "answer": "A collect-and-avoid arena game, closest to Pac-Man without a maze (pellets or coins plus roaming ghosts). The MinAtar-style Asterix (treasure and enemies) is th",
+     "correct": false,
+     "conf": 40,
+     "no_maze": true,
+     "sec": 692
+    },
+    {
+     "answer": "An open-arena collect-and-avoid game: pick up items while dodging moving enemies. The closest well-known game is Pac-Man without the maze.",
+     "correct": true,
+     "conf": 40,
+     "no_maze": true,
+     "sec": 708
+    },
+    {
+     "answer": "A Pac-Man-style collect-and-avoid game on an open board with no interior maze walls. Asterix-like collect/avoid is the second candidate.",
+     "correct": true,
+     "conf": 40,
+     "no_maze": true,
+     "sec": 675
+    },
+    {
+     "answer": "Sokoban \u2014 a simplified, wall-free box-pushing puzzle in an open 8\u00d78 room, with a small set of fixed levels.",
+     "correct": false,
+     "conf": 55,
+     "no_maze": false,
+     "sec": 288
+    },
+    {
+     "answer": "A Pac-Man-like game: collect dots or pellets in an open 8\u00d78 arena while avoiding roaming enemies (\"ghosts\"). The closest alternative is the same game with only ",
+     "correct": true,
+     "conf": 45,
+     "no_maze": false,
+     "sec": 742
+    },
+    {
+     "answer": "A collect-and-avoid arena game, closest to Pac-Man without the maze: pick up pellets or coins while roaming or chasing enemies move around.",
+     "correct": false,
+     "conf": 35,
+     "no_maze": true,
+     "sec": 897
+    },
+    {
+     "answer": "A Pac-Man-style collect-and-avoid game on an open 8\u00d78 arena (pellets or coins plus roaming \"ghosts\", no maze walls).",
+     "correct": true,
+     "conf": 40,
+     "no_maze": true,
+     "sec": 677
+    }
+   ],
+   "pong": [
+    {
+     "answer": "Pong (single-paddle, squash-style variant: ball bouncing in the box, agent's side on the left, scoring wall on the right).",
+     "correct": true,
+     "conf": 55,
+     "no_maze": false,
+     "sec": 1046
+    },
+    {
+     "answer": "Pong \u2014 single-player version, agent paddle on the left edge moving up/down, ball bouncing in the 8\u00d78 field, right wall as the goal side.",
+     "correct": true,
+     "conf": 55,
+     "no_maze": false,
+     "sec": 641
+    },
+    {
+     "answer": "Pong \u2014 a single paddle on the left wall moving up and down, with a bouncing ball. I see no clear sign of an opponent paddle, so it may be a one-player, squash-s",
+     "correct": true,
+     "conf": 62,
+     "no_maze": false,
+     "sec": 1006
+    },
+    {
+     "answer": "Pong (a paddle-and-ball game with the agent's paddle on the left and the scoring wall on the right).",
+     "correct": true,
+     "conf": 45,
+     "no_maze": false,
+     "sec": 1229
+    },
+    {
+     "answer": "Pong \u2014 a vertical paddle on the left wall, a bouncing ball, and the right wall as the scoring side.",
+     "correct": true,
+     "conf": 55,
+     "no_maze": false,
+     "sec": 878
+    },
+    {
+     "answer": "Pong (single-agent paddle-and-ball; agent on the left, scoring at the right wall).",
+     "correct": true,
+     "conf": 55,
+     "no_maze": false,
+     "sec": 1151
+    },
+    {
+     "answer": "Pong \u2014 a left-side paddle moving up and down against a bouncing ball, with the right wall as the scoring side.",
+     "correct": true,
+     "conf": 68,
+     "no_maze": false,
+     "sec": 1087
+    },
+    {
+     "answer": "Pong \u2014 a single paddle moving up and down on the left side against a bouncing ball, with the right wall as the scoring side.",
+     "correct": true,
+     "conf": 55,
+     "no_maze": false,
+     "sec": 2455
+    },
+    {
+     "answer": "A Frogger / Freeway-style road-crossing game. Freeway is the closer match, since only the forward/back pair of actions matters.",
+     "correct": false,
+     "conf": 35,
+     "no_maze": false,
+     "sec": 849
+    },
+    {
+     "answer": "Pong \u2014 a left-side paddle moving up and down against a diagonally bouncing ball, with the right wall as the scoring side.",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 900
+    }
+   ]
+  },
+  "c5_map_only": {
+   "breakout": [
+    {
+     "answer": "Breakout (a MinAtar-style Breakout on a small grid: paddle on the bottom row, ball, three rows of bricks at the top).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 83
+    },
+    {
+     "answer": "Breakout (a MinAtar-style version).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 71
+    },
+    {
+     "answer": "Breakout (a MinAtar-style version: three rows of bricks in rows 1\u20133, a single ball, and a paddle on the bottom row).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 150
+    },
+    {
+     "answer": "Breakout, in a MinAtar-style small-grid version: paddle on the bottom row, a ball, and three rows of bricks at the top.",
+     "correct": true,
+     "conf": 87,
+     "no_maze": false,
+     "sec": 101
+    },
+    {
+     "answer": "Breakout (a MinAtar-style Breakout on the 8\u00d78 playfield).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 138
+    }
+   ],
+   "freeway": [
+    {
+     "answer": "A road-crossing game in the style of Atari Freeway (the road section of Frogger): a single agent crossing six lanes of horizontal traffic.",
+     "correct": true,
+     "conf": 62,
+     "no_maze": false,
+     "sec": 217
+    },
+    {
+     "answer": "Frogger (a Freeway-style road-crossing game with sideways movement) \u2014 six traffic lanes in rows 2\u20137, start row 8, goal row 1.",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 104
+    },
+    {
+     "answer": "Frogger (a lane-crossing game).",
+     "correct": true,
+     "conf": 80,
+     "no_maze": false,
+     "sec": 113
+    },
+    {
+     "answer": "A Frogger-style road-crossing game (Frogger / Freeway / \"Crossy Road\"), with six traffic lanes in rows 2\u20137, the start at the bottom row 8 and the goal strip alo",
+     "correct": true,
+     "conf": 80,
+     "no_maze": false,
+     "sec": 100
+    },
+    {
+     "answer": "Frogger (a road-crossing game of the Frogger / Freeway / Crossy Road type).",
+     "correct": true,
+     "conf": 80,
+     "no_maze": false,
+     "sec": 139
+    }
+   ],
+   "pacman": [
+    {
+     "answer": "Pac-Man (a miniature Pac-Man-style maze game on the 8\u00d78 maze shown above).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 100
+    },
+    {
+     "answer": "Pac-Man (a small maze-chase version on an 8\u00d78 maze with ghosts and pellets).",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 51
+    },
+    {
+     "answer": "Pac-Man (a miniature maze version on a 10\u00d710 grid).",
+     "correct": true,
+     "conf": 88,
+     "no_maze": false,
+     "sec": 66
+    },
+    {
+     "answer": "Pac-Man, as a miniature version on an 8\u00d78 maze with interior wall blocks.",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 106
+    },
+    {
+     "answer": "Pac-Man, a small version on an 8\u00d78 symmetric maze with pellets and ghosts.",
+     "correct": true,
+     "conf": 85,
+     "no_maze": false,
+     "sec": 59
+    }
+   ],
+   "pong": [
+    {
+     "answer": "Pong \u2014 a single-player (squash or wall-ball style) version with the paddle on the left edge and the ball bouncing off the other walls.",
+     "correct": true,
+     "conf": 78,
+     "no_maze": false,
+     "sec": 94
+    },
+    {
+     "answer": "Pong \u2014 a single-paddle version, with the paddle on the left column and the ball bouncing around the field toward a marked right wall.",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 137
+    },
+    {
+     "answer": "Pong \u2014 a sideways, single-paddle version (squash/wall-ball style), with the agent's paddle in the left column and a ball bouncing around the field.",
+     "correct": true,
+     "conf": 66,
+     "no_maze": false,
+     "sec": 133
+    },
+    {
+     "answer": "Pong, in a single-player (squash / wall-ball) form: a paddle on the left edge moving up and down, a ball bouncing in the 8 x 8 field, and the right wall as the ",
+     "correct": true,
+     "conf": 72,
+     "no_maze": false,
+     "sec": 139
+    },
+    {
+     "answer": "Pong \u2014 a single-paddle (squash-style) version, with the paddle on the left column.",
+     "correct": true,
+     "conf": 70,
+     "no_maze": false,
+     "sec": 163
+    }
+   ]
+  }
+ }
+}

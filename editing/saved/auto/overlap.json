@@ -1,0 +1,47 @@
+{
+ "n_train": 7275,
+ "n_test": 500,
+ "exact_duplicates": 0,
+ "flagged": [
+  {
+   "train": "math_train_algebra_567",
+   "test": "test/algebra/567.json",
+   "shared": 0.55
+  },
+  {
+   "train": "math_train_counting_and_probability_33",
+   "test": "test/counting_and_probability/1060.json",
+   "shared": 0.684
+  },
+  {
+   "train": "math_train_counting_and_probability_36",
+   "test": "test/counting_and_probability/1060.json",
+   "shared": 0.684
+  },
+  {
+   "train": "math_train_counting_and_probability_207",
+   "test": "test/counting_and_probability/1060.json",
+   "shared": 0.722
+  },
+  {
+   "train": "math_train_counting_and_probability_300",
+   "test": "test/counting_and_probability/1060.json",
+   "shared": 0.65
+  },
+  {
+   "train": "math_train_counting_and_probability_322",
+   "test": "test/counting_and_probability/1060.json",
+   "shared": 0.619
+  },
+  {
+   "train": "math_train_counting_and_probability_574",
+   "test": "test/counting_and_probability/1060.json",
+   "shared": 0.619
+  },
+  {
+   "train": "math_train_counting_and_probability_766",
+   "test": "test/counting_and_probability/1060.json",
+   "shared": 0.684
+  }
+ ]
+}

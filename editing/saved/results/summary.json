@@ -1,0 +1,1315 @@
+{
+ "arms": {
+  "R0_base__think35": {
+   "label": "Base, thinking (post's setting)",
+   "acc": 0.06,
+   "cut": 0.94,
+   "tok": 31066.0,
+   "n": 100,
+   "s": 1500,
+   "frac_of_astra_gain": 0.0
+  },
+  "R1_astra_p50c__think35": {
+   "label": "Astra's edit, thinking",
+   "acc": 0.52,
+   "cut": 0.3,
+   "tok": 21477.74,
+   "n": 100,
+   "s": 814,
+   "frac_of_astra_gain": 1.0
+  },
+  "B1_random_dir__think35": {
+   "label": "Random direction, Astra's columns",
+   "acc": 0.08,
+   "cut": 0.92,
+   "tok": 30734.36,
+   "n": 100,
+   "s": 1204,
+   "frac_of_astra_gain": 0.04347826086956522
+  },
+  "B2_auto__think35": {
+   "label": "Automated loop direction, auto layers",
+   "acc": 0.17,
+   "cut": 0.8,
+   "tok": 28330.64,
+   "n": 100,
+   "s": 1067,
+   "frac_of_astra_gain": 0.2391304347826087
+  },
+  "B2_L15_19__think35": {
+   "label": "Automated loop direction, layers 15+19",
+   "acc": 0.39,
+   "cut": 0.49,
+   "tok": 24543.09,
+   "n": 100,
+   "s": 880,
+   "frac_of_astra_gain": 0.717391304347826
+  },
+  "R0_base__budget4k": {
+   "label": "Base, 4k thinking budget then answer",
+   "acc": 0.27,
+   "cut": 0.72,
+   "tok": 5734.05,
+   "n": 100,
+   "s": 122,
+   "frac_of_astra_gain": 0.4565217391304348
+  },
+  "R0_base__nothink35": {
+   "label": "Base, thinking off (model card setting)",
+   "acc": 0.39,
+   "cut": 0.25,
+   "tok": 3042.17,
+   "n": 100,
+   "s": 76,
+   "frac_of_astra_gain": 0.717391304347826
+  },
+  "R1_astra_p50c__nothink35": {
+   "label": "Astra's edit, thinking off",
+   "acc": 0.41,
+   "cut": 0.31,
+   "tok": 3836.85,
+   "n": 100,
+   "s": 89,
+   "frac_of_astra_gain": 0.7608695652173912
+  }
+ },
+ "auto_fit": {
+  "top2_layers": [
+   11,
+   10
+  ],
+  "per_layer": {
+   "0": {
+    "score": 0.16248458083834627
+   },
+   "1": {
+    "score": 0.21727216423501433
+   },
+   "2": {
+    "score": 0.18045745722808285
+   },
+   "3": {
+    "score": 0.26955774669532423
+   },
+   "4": {
+    "score": 0.2862705260919392
+   },
+   "5": {
+    "score": 0.29002477467610577
+   },
+   "6": {
+    "score": 0.43715781551722904
+   },
+   "7": {
+    "score": 0.4810578318192408
+   },
+   "8": {
+    "score": 0.4590961403279912
+   },
+   "9": {
+    "score": 0.5416005814504444
+   },
+   "10": {
+    "score": 0.5886119103551234
+   },
+   "11": {
+    "score": 0.6381699495365272
+   },
+   "12": {
+    "score": 0.5410987566871329
+   },
+   "13": {
+    "score": 0.5347684778977251
+   },
+   "14": {
+    "score": 0.5217575476113007
+   },
+   "15": {
+    "score": 0.4826153795609758,
+    "cos_with_astra_u": 0.385961028128339,
+    "col_overlap_with_astra": 31
+   },
+   "16": {
+    "score": 0.3525747359476694
+   },
+   "17": {
+    "score": 0.4172358353600295
+   },
+   "18": {
+    "score": 0.41654940354213266
+   },
+   "19": {
+    "score": 0.5060800819941313,
+    "cos_with_astra_u": 0.46794079973082947,
+    "col_overlap_with_astra": 28
+   },
+   "20": {
+    "score": 0.26788734290748356
+   },
+   "21": {
+    "score": 0.3602294240506542
+   },
+   "22": {
+    "score": 0.41065020582195383
+   },
+   "23": {
+    "score": 0.49086287675413737
+   }
+  },
+  "n_with_loops": 154
+ },
+ "full500x4": {
+  "arms": {
+   "R0_base__think35": {
+    "label": "Base, thinking",
+    "acc": 0.0855,
+    "cut": 0.922,
+    "tok": 30722.095,
+    "n": 2000,
+    "frac_of_edit_gain": 0.0
+   },
+   "R1_astra_p50c__think35": {
+    "label": "Released edit, thinking",
+    "acc": 0.51,
+    "cut": 0.3145,
+    "tok": 21801.2075,
+    "n": 2000,
+    "frac_of_edit_gain": 1.0
+   },
+   "B2_L15_19__think35": {
+    "label": "B2 auto direction, layers 15/19",
+    "acc": 0.388,
+    "cut": 0.471,
+    "tok": 23684.1425,
+    "n": 2000,
+    "frac_of_edit_gain": 0.7126030624263839
+   },
+   "B2_tuned__think35": {
+    "label": "B2 tuned (sweep winner: layers 9/13, alpha 12)",
+    "acc": 0.3225,
+    "cut": 0.5615,
+    "tok": 23187.421,
+    "n": 2000,
+    "frac_of_edit_gain": 0.558303886925795
+   },
+   "B2_tuned32__think35": {
+    "label": "B2 tuned at 32k (50 tries; layers 15/19, alpha 6, 256 cols)",
+    "acc": 0.442,
+    "cut": 0.2805,
+    "tok": 20913.0925,
+    "n": 2000,
+    "frac_of_edit_gain": 0.839811542991755
+   },
+   "B2_tuned32__think35nudge": {
+    "label": "B2 tuned at 32k + answer nudge on cut answers",
+    "acc": 0.47,
+    "cut": 0.0,
+    "tok": 20924.077,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9057714958775028
+   },
+   "R0_base__budget4k": {
+    "label": "Base, 4k thinking budget",
+    "acc": 0.3095,
+    "cut": 0.6845,
+    "tok": 5612.47,
+    "n": 2000,
+    "frac_of_edit_gain": 0.5276796230859835
+   },
+   "R0_base__budget8k": {
+    "label": "Base, 8k thinking budget",
+    "acc": 0.3255,
+    "cut": 0.667,
+    "tok": 9494.683,
+    "n": 2000,
+    "frac_of_edit_gain": 0.5653710247349824
+   },
+   "R0_base__budget16k": {
+    "label": "Base, 16k thinking budget",
+    "acc": 0.3405,
+    "cut": 0.6525,
+    "tok": 17150.0645,
+    "n": 2000,
+    "frac_of_edit_gain": 0.6007067137809188
+   },
+   "R0_base__budget4knudge": {
+    "label": "Base, 4k budget + answer nudge",
+    "acc": 0.475,
+    "cut": 0.0,
+    "tok": 4090.7055,
+    "n": 2000,
+    "frac_of_edit_gain": 0.917550058892815
+   },
+   "R0_base__budget8knudge": {
+    "label": "Base, 8k budget + answer nudge",
+    "acc": 0.5025,
+    "cut": 0.0,
+    "tok": 8004.0265,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9823321554770317
+   },
+   "R0_base__budget16knudge": {
+    "label": "Base, 16k budget + answer nudge",
+    "acc": 0.5035,
+    "cut": 0.0,
+    "tok": 15687.9545,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9846878680800941
+   },
+   "R0_base__think35nudge@b": {
+    "label": "Base, 32k + answer nudge on cut answers",
+    "acc": 0.4965,
+    "cut": 0.0,
+    "tok": 30874.298,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9681978798586572
+   },
+   "R1_astra_p50c__budget4knudge": {
+    "label": "Released edit, 4k budget + answer nudge",
+    "acc": 0.4785,
+    "cut": 0.0,
+    "tok": 4028.4395,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9257950530035335
+   },
+   "R1_astra_p50c__budget8knudge": {
+    "label": "Released edit, 8k budget + answer nudge",
+    "acc": 0.5365,
+    "cut": 0.0,
+    "tok": 7675.2765,
+    "n": 2000,
+    "frac_of_edit_gain": 1.0624263839811543
+   },
+   "R1_astra_p50c__budget16k": {
+    "label": "Released edit, 16k thinking budget",
+    "acc": 0.4245,
+    "cut": 0.514,
+    "tok": 15217.702,
+    "n": 2000,
+    "frac_of_edit_gain": 0.7985865724381624
+   },
+   "R1_astra_p50c__budget16knudge": {
+    "label": "Released edit, 16k budget + answer nudge",
+    "acc": 0.574,
+    "cut": 0.0,
+    "tok": 14060.0385,
+    "n": 2000,
+    "frac_of_edit_gain": 1.1507656065959952
+   },
+   "R1_astra_p50c__think35nudge@b": {
+    "label": "Released edit, 32k + answer nudge on cut answers",
+    "acc": 0.5835,
+    "cut": 0.0,
+    "tok": 21837.1295,
+    "n": 2000,
+    "frac_of_edit_gain": 1.1731448763250885
+   },
+   "R0_base__nothink35": {
+    "label": "Base, thinking off",
+    "acc": 0.4365,
+    "cut": 0.321,
+    "tok": 3723.013,
+    "n": 2000,
+    "frac_of_edit_gain": 0.8268551236749117
+   },
+   "R1_astra_p50c__nothink35": {
+    "label": "Released edit, thinking off",
+    "acc": 0.4315,
+    "cut": 0.323,
+    "tok": 3826.634,
+    "n": 2000,
+    "frac_of_edit_gain": 0.8150765606595994
+   },
+   "TRIG_nudge_w300d0.6__think35@b": {
+    "label": "Triggered: answer nudge at the loop",
+    "acc": 0.5,
+    "cut": 0.0,
+    "tok": 8069.3415,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9764428739693757
+   },
+   "TRIG_R0_base_w300d0.6__think35@b": {
+    "label": "Triggered: base continues (control)",
+    "acc": 0.518,
+    "cut": 0.0,
+    "tok": 30179.922,
+    "n": 2000,
+    "frac_of_edit_gain": 1.0188457008244993
+   },
+   "TRIG_B2_tuned32_w300d0.6__think35@b": {
+    "label": "Triggered: switch to B2 (no LLM)",
+    "acc": 0.5305,
+    "cut": 0.0,
+    "tok": 22180.7625,
+    "n": 2000,
+    "frac_of_edit_gain": 1.0482921083627796
+   },
+   "TRIG_R1_astra_p50c_w300d0.6__think35@b": {
+    "label": "Triggered: switch to the released edit",
+    "acc": 0.5955,
+    "cut": 0.0,
+    "tok": 22221.9365,
+    "n": 2000,
+    "frac_of_edit_gain": 1.2014134275618376
+   }
+  },
+  "pairs": [
+   {
+    "a": "TRIG_nudge_w300d0.6__think35@b",
+    "b": "R0_base__think35nudge@b",
+    "diff": 0.0035,
+    "se": 0.007094092775303211,
+    "z": 0.49336823056284396,
+    "p": 0.6217524258313214,
+    "ci95": [
+     -0.0105,
+     0.0175
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "TRIG_R0_base_w300d0.6__think35@b",
+    "b": "R0_base__think35nudge@b",
+    "diff": 0.0215,
+    "se": 0.006664407599878224,
+    "z": 3.226093193998647,
+    "p": 0.0012549248793155999,
+    "ci95": [
+     0.0085,
+     0.035
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "TRIG_B2_tuned32_w300d0.6__think35@b",
+    "b": "R0_base__think35nudge@b",
+    "diff": 0.034,
+    "se": 0.010459771203389418,
+    "z": 3.250549112296312,
+    "p": 0.0011518237216087265,
+    "ci95": [
+     0.014,
+     0.0545
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "TRIG_B2_tuned32_w300d0.6__think35@b",
+    "b": "TRIG_R0_base_w300d0.6__think35@b",
+    "diff": 0.0125,
+    "se": 0.01037558700080253,
+    "z": 1.2047511142293108,
+    "p": 0.22829939716993064,
+    "ci95": [
+     -0.008,
+     0.033
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "TRIG_B2_tuned32_w300d0.6__think35@b",
+    "b": "B2_tuned32__think35nudge",
+    "diff": 0.0605,
+    "se": 0.010375200700668798,
+    "z": 5.831212498482087,
+    "p": 5.502605549680707e-09,
+    "ci95": [
+     0.0405,
+     0.0815
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "TRIG_R1_astra_p50c_w300d0.6__think35@b",
+    "b": "R0_base__think35nudge@b",
+    "diff": 0.099,
+    "se": 0.010276634587104563,
+    "z": 9.633503960939533,
+    "p": 5.772671459486437e-22,
+    "ci95": [
+     0.079,
+     0.1185
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "TRIG_R1_astra_p50c_w300d0.6__think35@b",
+    "b": "R1_astra_p50c__think35nudge@b",
+    "diff": 0.012,
+    "se": 0.009716007492957507,
+    "z": 1.2350752105428087,
+    "p": 0.2168025143126196,
+    "ci95": [
+     -0.0065,
+     0.031
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35nudge@b",
+    "b": "TRIG_B2_tuned32_w300d0.6__think35@b",
+    "diff": 0.053,
+    "se": 0.009928703758126399,
+    "z": 5.3380583499251655,
+    "p": 9.394722714119574e-08,
+    "ci95": [
+     0.0335,
+     0.0725
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "B2_L15_19__think35",
+    "diff": 0.122,
+    "se": 0.011291012972621002,
+    "z": 10.805053567455067,
+    "p": 3.2576681453931176e-27,
+    "ci95": [
+     0.1,
+     0.1445
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "B2_tuned__think35",
+    "diff": 0.1875,
+    "se": 0.013125626237565068,
+    "z": 14.285032699116616,
+    "p": 2.712821288092113e-46,
+    "ci95": [
+     0.161,
+     0.2135
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__budget16k",
+    "diff": 0.1695,
+    "se": 0.013024160530146657,
+    "z": 13.014274479162257,
+    "p": 1.0150174505421231e-38,
+    "ci95": [
+     0.1445,
+     0.195
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__budget4knudge",
+    "diff": 0.035,
+    "se": 0.01188834157192084,
+    "z": 2.9440607664459066,
+    "p": 0.0032393639029827015,
+    "ci95": [
+     0.011,
+     0.058
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__budget8knudge",
+    "diff": 0.0075,
+    "se": 0.012587867524630026,
+    "z": 0.5958117993635649,
+    "p": 0.551300960312506,
+    "ci95": [
+     -0.0165,
+     0.032
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__budget16knudge",
+    "diff": 0.0065,
+    "se": 0.012903429660132533,
+    "z": 0.5037420415506212,
+    "p": 0.6144426608568601,
+    "ci95": [
+     -0.0185,
+     0.032
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R0_base__budget4knudge",
+    "b": "R0_base__nothink35",
+    "diff": 0.0385,
+    "se": 0.01290808806427001,
+    "z": 2.982626071987315,
+    "p": 0.0028578691876746296,
+    "ci95": [
+     0.0135,
+     0.0645
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__budget4knudge",
+    "b": "R0_base__budget4knudge",
+    "diff": 0.0035,
+    "se": 0.009639051957806358,
+    "z": 0.36310624896730254,
+    "p": 0.7165255167504145,
+    "ci95": [
+     -0.016,
+     0.0225
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__budget8knudge",
+    "b": "R0_base__budget8knudge",
+    "diff": 0.034,
+    "se": 0.009944132518379176,
+    "z": 3.4191016599145003,
+    "p": 0.0006282824859746408,
+    "ci95": [
+     0.0145,
+     0.0535
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__budget16k",
+    "b": "R0_base__budget16k",
+    "diff": 0.084,
+    "se": 0.010493246229497606,
+    "z": 8.005149041853919,
+    "p": 1.1932206557605786e-15,
+    "ci95": [
+     0.0635,
+     0.105
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__budget16knudge",
+    "b": "R0_base__budget16knudge",
+    "diff": 0.0705,
+    "se": 0.010795489112140342,
+    "z": 6.530505405328733,
+    "p": 6.554812204173165e-11,
+    "ci95": [
+     0.0495,
+     0.091
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35nudge@b",
+    "b": "R0_base__think35nudge@b",
+    "diff": 0.087,
+    "se": 0.011581461933669776,
+    "z": 7.512005004055012,
+    "p": 5.822856259111712e-14,
+    "ci95": [
+     0.0645,
+     0.11
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35nudge@b",
+    "b": "R0_base__budget16knudge",
+    "diff": 0.08,
+    "se": 0.011465728317542823,
+    "z": 6.977315159090085,
+    "p": 3.008742722539471e-12,
+    "ci95": [
+     0.058,
+     0.1025
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "B2_tuned32__think35",
+    "diff": 0.068,
+    "se": 0.010629108895473019,
+    "z": 6.397525951489826,
+    "p": 1.5791464804197804e-10,
+    "ci95": [
+     0.0475,
+     0.089
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35nudge@b",
+    "b": "B2_tuned32__think35nudge",
+    "diff": 0.1135,
+    "se": 0.01103308469630464,
+    "z": 10.287240887221238,
+    "p": 8.044858326142087e-25,
+    "ci95": [
+     0.092,
+     0.1355
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__nothink35",
+    "diff": 0.0735,
+    "se": 0.012836473429263988,
+    "z": 5.725871704952714,
+    "p": 1.0290396796341002e-08,
+    "ci95": [
+     0.0485,
+     0.099
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R1_astra_p50c__nothink35",
+    "diff": 0.0785,
+    "se": 0.012092060861232193,
+    "z": 6.491862793353554,
+    "p": 8.478145684910779e-11,
+    "ci95": [
+     0.0545,
+     0.102
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "B2_L15_19__think35",
+    "b": "R0_base__nothink35",
+    "diff": -0.0485,
+    "se": 0.012564283602533404,
+    "z": -3.860148460053917,
+    "p": 0.00011331815695113507,
+    "ci95": [
+     -0.073,
+     -0.0235
+    ],
+    "n_problems": 500
+   }
+  ]
+ },
+ "gsm8k": {
+  "arms": {
+   "R0_base__think35": {
+    "label": "Base, thinking (32k)",
+    "acc": 0.12964366944655042,
+    "cut": 0.8858984078847612,
+    "tok": 29625.70545868082,
+    "n": 2638,
+    "frac_of_edit_gain": 0.0
+   },
+   "R1_astra_p50c__think35": {
+    "label": "Released edit, thinking (32k)",
+    "acc": 0.6827141774071266,
+    "cut": 0.060652009097801364,
+    "tok": 11615.270659590598,
+    "n": 2638,
+    "frac_of_edit_gain": 1.0
+   },
+   "R0_base__think35nudge": {
+    "label": "Base, 32k + answer nudge on cut answers",
+    "acc": 0.6724791508718726,
+    "cut": 0.0,
+    "tok": 29665.216072782412,
+    "n": 2638,
+    "frac_of_edit_gain": 0.9814941740918437
+   },
+   "R1_astra_p50c__think35nudge": {
+    "label": "Released edit, 32k + answer nudge on cut answers",
+    "acc": 0.6952236542835482,
+    "cut": 0.0,
+    "tok": 11618.180439727066,
+    "n": 2638,
+    "frac_of_edit_gain": 1.0226182316655243
+   },
+   "R0_base__budget8k": {
+    "label": "Base, 8k thinking budget",
+    "acc": 0.5451099317664898,
+    "cut": 0.4025777103866566,
+    "tok": 8786.834344200151,
+    "n": 2638,
+    "frac_of_edit_gain": 0.7511994516792324
+   },
+   "R1_astra_p50c__budget8k": {
+    "label": "Released edit, 8k thinking budget",
+    "acc": 0.5921152388172858,
+    "cut": 0.32676269901440486,
+    "tok": 7518.684988627749,
+    "n": 2638,
+    "frac_of_edit_gain": 0.8361891706648388
+   },
+   "R0_base__budget8knudge": {
+    "label": "Base, 8k budget + answer nudge",
+    "acc": 0.6743745261561789,
+    "cut": 0.0,
+    "tok": 7794.413570887035,
+    "n": 2638,
+    "frac_of_edit_gain": 0.9849211788896504
+   },
+   "R1_astra_p50c__budget8knudge": {
+    "label": "Released edit, 8k budget + answer nudge",
+    "acc": 0.6944655041698257,
+    "cut": 0.0,
+    "tok": 6720.578089461714,
+    "n": 2638,
+    "frac_of_edit_gain": 1.0212474297464016
+   },
+   "R0_base__budget16k": {
+    "label": "Base, 16k thinking budget",
+    "acc": 0.5428354814253222,
+    "cut": 0.4150871872630781,
+    "tok": 16090.06027293404,
+    "n": 2638,
+    "frac_of_edit_gain": 0.7470870459218643
+   },
+   "R1_astra_p50c__budget16k": {
+    "label": "Released edit, 16k thinking budget",
+    "acc": 0.6573161485974223,
+    "cut": 0.15314632297194844,
+    "tok": 10296.236163760424,
+    "n": 2638,
+    "frac_of_edit_gain": 0.9540781357093898
+   },
+   "R0_base__budget16knudge": {
+    "label": "Base, 16k budget + answer nudge",
+    "acc": 0.6834723275208491,
+    "cut": 0.0,
+    "tok": 15088.121304018196,
+    "n": 2638,
+    "frac_of_edit_gain": 1.0013708019191225
+   },
+   "R1_astra_p50c__budget16knudge": {
+    "label": "Released edit, 16k budget + answer nudge",
+    "acc": 0.6978771796815769,
+    "cut": 0.0,
+    "tok": 9930.617892342683,
+    "n": 2638,
+    "frac_of_edit_gain": 1.0274160383824535
+   },
+   "R0_base__nothink35": {
+    "label": "Base, thinking off",
+    "acc": 0.5674753601213041,
+    "cut": 0.04283548142532222,
+    "tok": 1117.4802880970433,
+    "n": 2638,
+    "frac_of_edit_gain": 0.7916381082933517
+   }
+  },
+  "pairs": [
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__think35",
+    "diff": 0.5530705079605762,
+    "se": 0.011231155065977414,
+    "z": 49.24431233578059,
+    "p": 0.0,
+    "ci95": [
+     0.530705079605762,
+     0.574677786201668
+    ],
+    "n_problems": 1319
+   },
+   {
+    "a": "R1_astra_p50c__think35nudge",
+    "b": "R0_base__think35nudge",
+    "diff": 0.022744503411675512,
+    "se": 0.008507279617330481,
+    "z": 2.673534247697922,
+    "p": 0.0075056611950781085,
+    "ci95": [
+     0.005686125852918878,
+     0.03904473085670963
+    ],
+    "n_problems": 1319
+   },
+   {
+    "a": "R1_astra_p50c__budget8k",
+    "b": "R0_base__budget8k",
+    "diff": 0.04700530705079606,
+    "se": 0.008765967076147916,
+    "z": 5.3622500110337965,
+    "p": 8.219167302790786e-08,
+    "ci95": [
+     0.029567854435178165,
+     0.06444275966641395
+    ],
+    "n_problems": 1319
+   },
+   {
+    "a": "R1_astra_p50c__budget8knudge",
+    "b": "R0_base__budget8knudge",
+    "diff": 0.0200909780136467,
+    "se": 0.008621457943397168,
+    "z": 2.3303457658264843,
+    "p": 0.019787883726901774,
+    "ci95": [
+     0.003032600454890068,
+     0.03677028051554208
+    ],
+    "n_problems": 1319
+   },
+   {
+    "a": "R1_astra_p50c__budget16k",
+    "b": "R0_base__budget16k",
+    "diff": 0.11448066717210008,
+    "se": 0.009403202497860357,
+    "z": 12.1746465843046,
+    "p": 4.242276280812185e-34,
+    "ci95": [
+     0.09628506444275967,
+     0.1326762699014405
+    ],
+    "n_problems": 1319
+   },
+   {
+    "a": "R1_astra_p50c__budget16knudge",
+    "b": "R0_base__budget16knudge",
+    "diff": 0.014404852160727824,
+    "se": 0.008721251941914115,
+    "z": 1.6516954511425672,
+    "p": 0.09859665045877984,
+    "ci95": [
+     -0.00265352539802881,
+     0.0310841546626232
+    ],
+    "n_problems": 1319
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__budget8knudge",
+    "diff": 0.008339651250947688,
+    "se": 0.008527223191567672,
+    "z": 0.978003162763997,
+    "p": 0.32807275982638745,
+    "ci95": [
+     -0.008339651250947688,
+     0.02539802880970432
+    ],
+    "n_problems": 1319
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__nothink35",
+    "diff": 0.1152388172858226,
+    "se": 0.01088519777763501,
+    "z": 10.586745380281014,
+    "p": 3.4332176754398194e-26,
+    "ci95": [
+     0.09476876421531463,
+     0.13684609552691432
+    ],
+    "n_problems": 1319
+   },
+   {
+    "a": "R0_base__budget8knudge",
+    "b": "R0_base__nothink35",
+    "diff": 0.1068991660348749,
+    "se": 0.010215770249780463,
+    "z": 10.464131770893356,
+    "p": 1.2622840597910507e-25,
+    "ci95": [
+     0.08718726307808947,
+     0.12661106899166036
+    ],
+    "n_problems": 1319
+   }
+  ]
+ },
+ "mmlupro": {
+  "arms": {
+   "R0_base__nothink35": {
+    "label": "Base, thinking off",
+    "acc": 0.357,
+    "cut": 0.1765,
+    "tok": 2822.1445,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9285714285714285
+   },
+   "R1_astra_p50c__nothink35": {
+    "label": "Released edit, thinking off",
+    "acc": 0.344,
+    "cut": 0.139,
+    "tok": 2733.792,
+    "n": 2000,
+    "frac_of_edit_gain": 0.8873015873015871
+   },
+   "R0_base__budget8k": {
+    "label": "Base, 8k thinking budget",
+    "acc": 0.245,
+    "cut": 0.566,
+    "tok": 9317.119,
+    "n": 2000,
+    "frac_of_edit_gain": 0.573015873015873
+   },
+   "R1_astra_p50c__budget8k": {
+    "label": "Released edit, 8k thinking budget",
+    "acc": 0.2975,
+    "cut": 0.4355,
+    "tok": 8519.0295,
+    "n": 2000,
+    "frac_of_edit_gain": 0.7396825396825396
+   },
+   "R0_base__budget8knudge": {
+    "label": "Base, 8k budget + answer nudge",
+    "acc": 0.375,
+    "cut": 0.0,
+    "tok": 7983.752,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9857142857142857
+   },
+   "R1_astra_p50c__budget8knudge": {
+    "label": "Released edit, 8k budget + answer nudge",
+    "acc": 0.3925,
+    "cut": 0.0,
+    "tok": 7448.182,
+    "n": 2000,
+    "frac_of_edit_gain": 1.0412698412698413
+   },
+   "R0_base__think35": {
+    "label": "Base, thinking (32k)",
+    "acc": 0.0645,
+    "cut": 0.898,
+    "tok": 30082.517,
+    "n": 2000,
+    "frac_of_edit_gain": 0.0
+   },
+   "R1_astra_p50c__think35": {
+    "label": "Released edit, thinking (32k)",
+    "acc": 0.3795,
+    "cut": 0.1145,
+    "tok": 15292.964,
+    "n": 2000,
+    "frac_of_edit_gain": 1.0
+   },
+   "R0_base__think35nudge": {
+    "label": "Base, 32k + answer nudge on cut answers",
+    "acc": 0.37,
+    "cut": 0.0,
+    "tok": 30099.3055,
+    "n": 2000,
+    "frac_of_edit_gain": 0.9698412698412698
+   },
+   "R1_astra_p50c__think35nudge": {
+    "label": "Released edit, 32k + answer nudge on cut answers",
+    "acc": 0.4125,
+    "cut": 0.0,
+    "tok": 15295.516,
+    "n": 2000,
+    "frac_of_edit_gain": 1.1047619047619046
+   }
+  },
+  "pairs": [
+   {
+    "a": "R1_astra_p50c__nothink35",
+    "b": "R0_base__nothink35",
+    "diff": -0.013,
+    "se": 0.010814247451762325,
+    "z": -1.2021178596094986,
+    "p": 0.22931786775319654,
+    "ci95": [
+     -0.0345,
+     0.0085
+    ],
+    "n_problems": 1000
+   },
+   {
+    "a": "R1_astra_p50c__budget8k",
+    "b": "R0_base__budget8k",
+    "diff": 0.0525,
+    "se": 0.009385192157427136,
+    "z": 5.593918496218876,
+    "p": 2.2200120059861945e-08,
+    "ci95": [
+     0.0345,
+     0.071
+    ],
+    "n_problems": 1000
+   },
+   {
+    "a": "R1_astra_p50c__budget8knudge",
+    "b": "R0_base__budget8knudge",
+    "diff": 0.0175,
+    "se": 0.010888632251679378,
+    "z": 1.6071807363409614,
+    "p": 0.10801472654179611,
+    "ci95": [
+     -0.004,
+     0.039
+    ],
+    "n_problems": 1000
+   },
+   {
+    "a": "R1_astra_p50c__think35",
+    "b": "R0_base__think35",
+    "diff": 0.315,
+    "se": 0.012920601454341896,
+    "z": 24.379670026440294,
+    "p": 2.8102557721235066e-131,
+    "ci95": [
+     0.2895,
+     0.34
+    ],
+    "n_problems": 1000
+   },
+   {
+    "a": "R1_astra_p50c__think35nudge",
+    "b": "R0_base__think35nudge",
+    "diff": 0.0425,
+    "se": 0.01104833995746944,
+    "z": 3.8467317410220594,
+    "p": 0.00011970390799910843,
+    "ci95": [
+     0.021,
+     0.0645
+    ],
+    "n_problems": 1000
+   },
+   {
+    "a": "R1_astra_p50c__think35nudge",
+    "b": "R0_base__nothink35",
+    "diff": 0.0555,
+    "se": 0.011824109250153246,
+    "z": 4.693799661846045,
+    "p": 2.6817667419121205e-06,
+    "ci95": [
+     0.032,
+     0.0785
+    ],
+    "n_problems": 1000
+   },
+   {
+    "a": "R0_base__think35nudge",
+    "b": "R0_base__nothink35",
+    "diff": 0.013,
+    "se": 0.01170333149013425,
+    "z": 1.1107948203431497,
+    "p": 0.2666566765028449,
+    "ci95": [
+     -0.01,
+     0.036
+    ],
+    "n_problems": 1000
+   }
+  ]
+ },
+ "transfer_2b": {
+  "arms": {
+   "R0_base__nothink35": {
+    "label": "Base, thinking off",
+    "acc": 0.755,
+    "cut": 0.167,
+    "tok": 2643.885,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "R0_base__think35": {
+    "label": "Base, thinking (32k)",
+    "acc": 0.671,
+    "cut": 0.323,
+    "tok": 17032.661,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "B2_tuned32__think35": {
+    "label": "B2, thinking (32k)",
+    "acc": 0.691,
+    "cut": 0.274,
+    "tok": 17163.824,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "R0_base__think35nudge": {
+    "label": "Base, 32k + answer nudge",
+    "acc": 0.869,
+    "cut": 0.0,
+    "tok": 17038.67,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "B2_tuned32__think35nudge": {
+    "label": "B2, 32k + answer nudge",
+    "acc": 0.809,
+    "cut": 0.0,
+    "tok": 17170.622,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "R0_base__budget8k": {
+    "label": "Base, 8k budget",
+    "acc": 0.683,
+    "cut": 0.315,
+    "tok": 7534.659,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "B2_tuned32__budget8k": {
+    "label": "B2, 8k budget",
+    "acc": 0.612,
+    "cut": 0.392,
+    "tok": 7751.674,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "R0_base__budget8knudge": {
+    "label": "Base, 8k + nudge",
+    "acc": 0.787,
+    "cut": 0.0,
+    "tok": 6679.885,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "B2_tuned32__budget8knudge": {
+    "label": "B2, 8k + nudge",
+    "acc": 0.743,
+    "cut": 0.0,
+    "tok": 6795.168,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "R0_base__budget16k": {
+    "label": "Base, 16k budget",
+    "acc": 0.755,
+    "cut": 0.234,
+    "tok": 11518.037,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "B2_tuned32__budget16k": {
+    "label": "B2, 16k budget",
+    "acc": 0.676,
+    "cut": 0.315,
+    "tok": 12042.641,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "R0_base__budget16knudge": {
+    "label": "Base, 16k + nudge",
+    "acc": 0.847,
+    "cut": 0.0,
+    "tok": 10858.006,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   },
+   "B2_tuned32__budget16knudge": {
+    "label": "B2, 16k + nudge",
+    "acc": 0.795,
+    "cut": 0.0,
+    "tok": 11282.434,
+    "n": 1000,
+    "frac_of_edit_gain": null
+   }
+  },
+  "pairs": [
+   {
+    "a": "B2_tuned32__think35",
+    "b": "R0_base__think35",
+    "diff": 0.02,
+    "se": 0.014752466591762957,
+    "z": 1.3557054934235204,
+    "p": 0.17519289086601228,
+    "ci95": [
+     -0.009,
+     0.049
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "B2_tuned32__think35nudge",
+    "b": "R0_base__think35nudge",
+    "diff": -0.06,
+    "se": 0.012373609514804066,
+    "z": -4.849029697293634,
+    "p": 1.2406684810183067e-06,
+    "ci95": [
+     -0.084,
+     -0.036
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "B2_tuned32__budget8k",
+    "b": "R0_base__budget8k",
+    "diff": -0.071,
+    "se": 0.011882777486833758,
+    "z": -5.975034042223608,
+    "p": 2.3004214113923713e-09,
+    "ci95": [
+     -0.095,
+     -0.048
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "B2_tuned32__budget8knudge",
+    "b": "R0_base__budget8knudge",
+    "diff": -0.044,
+    "se": 0.012182973762567119,
+    "z": -3.611597698354445,
+    "p": 0.000304316397188207,
+    "ci95": [
+     -0.068,
+     -0.02
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "B2_tuned32__budget16k",
+    "b": "R0_base__budget16k",
+    "diff": -0.079,
+    "se": 0.012682258448664316,
+    "z": -6.229174426603821,
+    "p": 4.688995049220057e-10,
+    "ci95": [
+     -0.104,
+     -0.054
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "B2_tuned32__budget16knudge",
+    "b": "R0_base__budget16knudge",
+    "diff": -0.052,
+    "se": 0.012842189987980038,
+    "z": -4.049153613882886,
+    "p": 5.140319769980312e-05,
+    "ci95": [
+     -0.077,
+     -0.027
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "R0_base__think35nudge",
+    "b": "R0_base__nothink35",
+    "diff": 0.114,
+    "se": 0.013942625060840385,
+    "z": 8.176365605655088,
+    "p": 2.9253347245387304e-16,
+    "ci95": [
+     0.087,
+     0.141
+    ],
+    "n_problems": 500
+   },
+   {
+    "a": "B2_tuned32__think35nudge",
+    "b": "R0_base__nothink35",
+    "diff": 0.054,
+    "se": 0.014162243405497349,
+    "z": 3.812955225655764,
+    "p": 0.00013731499595223483,
+    "ci95": [
+     0.026,
+     0.081
+    ],
+    "n_problems": 500
+   }
+  ]
+ }
+}

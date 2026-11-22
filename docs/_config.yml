@@ -1,0 +1,29 @@
+# GitHub Pages site for the blog post. Pages setting: Deploy from a branch -> main, /docs.
+# The post itself is post.md (served at the site root).
+
+title: Weight-space programming, re-tested
+description: >-
+  Re-testing the two headline claims of Sparks of Weight-Space Programming with controls and strong baselines.
+lang: en
+repo_url: https://github.com/OfirShechter/weight-space-programming-controls
+
+# A byline under the title and in link previews. Leave it commented out to publish without one.
+# author: Your Name
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+
+# Scripts that build the figures live next to them, but are not part of the site.
+exclude:
+  - make_fig_footprint_games.py
+  - make_cover.py
+  - Gemfile
+  - Gemfile.lock
+  - vendor

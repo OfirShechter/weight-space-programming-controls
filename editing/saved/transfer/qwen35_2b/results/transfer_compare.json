@@ -1,0 +1,214 @@
+{
+ "arms": {
+  "R0_base__nothink35": {
+   "label": "Base, thinking off",
+   "acc": 0.755,
+   "cut": 0.167,
+   "tok": 2643.885,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "R0_base__think35": {
+   "label": "Base, thinking (32k)",
+   "acc": 0.671,
+   "cut": 0.323,
+   "tok": 17032.661,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "B2_tuned32__think35": {
+   "label": "B2, thinking (32k)",
+   "acc": 0.691,
+   "cut": 0.274,
+   "tok": 17163.824,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "R0_base__think35nudge": {
+   "label": "Base, 32k + answer nudge",
+   "acc": 0.869,
+   "cut": 0.0,
+   "tok": 17038.67,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "B2_tuned32__think35nudge": {
+   "label": "B2, 32k + answer nudge",
+   "acc": 0.809,
+   "cut": 0.0,
+   "tok": 17170.622,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "R0_base__budget8k": {
+   "label": "Base, 8k budget",
+   "acc": 0.683,
+   "cut": 0.315,
+   "tok": 7534.659,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "B2_tuned32__budget8k": {
+   "label": "B2, 8k budget",
+   "acc": 0.612,
+   "cut": 0.392,
+   "tok": 7751.674,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "R0_base__budget8knudge": {
+   "label": "Base, 8k + nudge",
+   "acc": 0.787,
+   "cut": 0.0,
+   "tok": 6679.885,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "B2_tuned32__budget8knudge": {
+   "label": "B2, 8k + nudge",
+   "acc": 0.743,
+   "cut": 0.0,
+   "tok": 6795.168,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "R0_base__budget16k": {
+   "label": "Base, 16k budget",
+   "acc": 0.755,
+   "cut": 0.234,
+   "tok": 11518.037,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "B2_tuned32__budget16k": {
+   "label": "B2, 16k budget",
+   "acc": 0.676,
+   "cut": 0.315,
+   "tok": 12042.641,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "R0_base__budget16knudge": {
+   "label": "Base, 16k + nudge",
+   "acc": 0.847,
+   "cut": 0.0,
+   "tok": 10858.006,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  },
+  "B2_tuned32__budget16knudge": {
+   "label": "B2, 16k + nudge",
+   "acc": 0.795,
+   "cut": 0.0,
+   "tok": 11282.434,
+   "n": 1000,
+   "frac_of_edit_gain": null
+  }
+ },
+ "pairs": [
+  {
+   "a": "B2_tuned32__think35",
+   "b": "R0_base__think35",
+   "diff": 0.02,
+   "se": 0.014752466591762957,
+   "z": 1.3557054934235204,
+   "p": 0.17519289086601228,
+   "ci95": [
+    -0.009,
+    0.049
+   ],
+   "n_problems": 500
+  },
+  {
+   "a": "B2_tuned32__think35nudge",
+   "b": "R0_base__think35nudge",
+   "diff": -0.06,
+   "se": 0.012373609514804066,
+   "z": -4.849029697293634,
+   "p": 1.2406684810183067e-06,
+   "ci95": [
+    -0.084,
+    -0.036
+   ],
+   "n_problems": 500
+  },
+  {
+   "a": "B2_tuned32__budget8k",
+   "b": "R0_base__budget8k",
+   "diff": -0.071,
+   "se": 0.011882777486833758,
+   "z": -5.975034042223608,
+   "p": 2.3004214113923713e-09,
+   "ci95": [
+    -0.095,
+    -0.048
+   ],
+   "n_problems": 500
+  },
+  {
+   "a": "B2_tuned32__budget8knudge",
+   "b": "R0_base__budget8knudge",
+   "diff": -0.044,
+   "se": 0.012182973762567119,
+   "z": -3.611597698354445,
+   "p": 0.000304316397188207,
+   "ci95": [
+    -0.068,
+    -0.02
+   ],
+   "n_problems": 500
+  },
+  {
+   "a": "B2_tuned32__budget16k",
+   "b": "R0_base__budget16k",
+   "diff": -0.079,
+   "se": 0.012682258448664316,
+   "z": -6.229174426603821,
+   "p": 4.688995049220057e-10,
+   "ci95": [
+    -0.104,
+    -0.054
+   ],
+   "n_problems": 500
+  },
+  {
+   "a": "B2_tuned32__budget16knudge",
+   "b": "R0_base__budget16knudge",
+   "diff": -0.052,
+   "se": 0.012842189987980038,
+   "z": -4.049153613882886,
+   "p": 5.140319769980312e-05,
+   "ci95": [
+    -0.077,
+    -0.027
+   ],
+   "n_problems": 500
+  },
+  {
+   "a": "R0_base__think35nudge",
+   "b": "R0_base__nothink35",
+   "diff": 0.114,
+   "se": 0.013942625060840385,
+   "z": 8.176365605655088,
+   "p": 2.9253347245387304e-16,
+   "ci95": [
+    0.087,
+    0.141
+   ],
+   "n_problems": 500
+  },
+  {
+   "a": "B2_tuned32__think35nudge",
+   "b": "R0_base__nothink35",
+   "diff": 0.054,
+   "se": 0.014162243405497349,
+   "z": 3.812955225655764,
+   "p": 0.00013731499595223483,
+   "ci95": [
+    0.026,
+    0.081
+   ],
+   "n_problems": 500
+  }
+ ]
+}

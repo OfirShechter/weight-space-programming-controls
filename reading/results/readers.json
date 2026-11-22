@@ -1,0 +1,106 @@
+{
+ "opus-5.5": {
+  "counts": {
+   "c0_original": [
+    20,
+    20
+   ],
+   "c1_permuted": [
+    8,
+    8
+   ],
+   "c2_erased": [
+    10,
+    20
+   ],
+   "c2b_erased_mix": [
+    0,
+    0
+   ],
+   "c5_map_only": [
+    19,
+    20
+   ]
+  },
+  "p_map_vs_erased": 0.0033420517291485033,
+  "p_orig_vs_erased": 0.00043591979075850045
+ },
+ "opus-5.5-c2b": {
+  "counts": {
+   "c0_original": [
+    0,
+    0
+   ],
+   "c1_permuted": [
+    0,
+    0
+   ],
+   "c2_erased": [
+    0,
+    0
+   ],
+   "c2b_erased_mix": [
+    14,
+    40
+   ],
+   "c5_map_only": [
+    0,
+    0
+   ]
+  },
+  "p_map_vs_erased": null,
+  "p_orig_vs_erased": null
+ },
+ "fable-5.2": {
+  "counts": {
+   "c0_original": [
+    12,
+    12
+   ],
+   "c1_permuted": [
+    8,
+    8
+   ],
+   "c2_erased": [
+    15,
+    16
+   ],
+   "c2b_erased_mix": [
+    26,
+    40
+   ],
+   "c5_map_only": [
+    20,
+    20
+   ]
+  },
+  "p_map_vs_erased": 0.4444444444444444,
+  "p_orig_vs_erased": 1.0
+ },
+ "footprint rules (no LLM)": {
+  "counts": {
+   "c0_original": [
+    4,
+    4
+   ],
+   "c1_permuted": [
+    4,
+    4
+   ],
+   "c2_erased": [
+    0,
+    4
+   ],
+   "c2b_erased_mix": [
+    0,
+    4
+   ],
+   "c5_map_only": [
+    4,
+    4
+   ]
+  },
+  "p_map_vs_erased": 0.02857142857142857,
+  "p_orig_vs_erased": 0.02857142857142857
+ }
+}

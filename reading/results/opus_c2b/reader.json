@@ -1,0 +1,9 @@
+{
+ "backend": "claude",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "base_url": null,
+ "max_tokens": null,
+ "reasoning_effort": null,
+ "samples": 10
+}

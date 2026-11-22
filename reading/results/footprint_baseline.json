@@ -1,0 +1,112 @@
+{
+ "c0_original": {
+  "breakout": {
+   "guess": "breakout",
+   "correct": true,
+   "evidence": "agent only in row 8, targets only in rows 1-3"
+  },
+  "pong": {
+   "guess": "pong",
+   "correct": true,
+   "evidence": "agent only in column 1"
+  },
+  "pacman": {
+   "guess": "pacman",
+   "correct": true,
+   "evidence": "agent visits 75% of its bounding box (walls)"
+  },
+  "freeway": {
+   "guess": "freeway",
+   "correct": true,
+   "evidence": "agent in 7 rows, targets only in row 1"
+  }
+ },
+ "c1_permuted": {
+  "breakout": {
+   "guess": "breakout",
+   "correct": true,
+   "evidence": "agent only in row 8, targets only in rows 1-3"
+  },
+  "pong": {
+   "guess": "pong",
+   "correct": true,
+   "evidence": "agent only in column 1"
+  },
+  "pacman": {
+   "guess": "pacman",
+   "correct": true,
+   "evidence": "agent visits 75% of its bounding box (walls)"
+  },
+  "freeway": {
+   "guess": "freeway",
+   "correct": true,
+   "evidence": "agent in 7 rows, targets only in row 1"
+  }
+ },
+ "c2_erased": {
+  "breakout": {
+   "guess": "unknown",
+   "correct": false,
+   "evidence": "agent fills 100% of rows 1-8; targets in 8 rows"
+  },
+  "pong": {
+   "guess": "unknown",
+   "correct": false,
+   "evidence": "agent fills 100% of rows 1-8; targets in 0 rows"
+  },
+  "pacman": {
+   "guess": "unknown",
+   "correct": false,
+   "evidence": "agent fills 100% of rows 1-8; targets in 8 rows"
+  },
+  "freeway": {
+   "guess": "unknown",
+   "correct": false,
+   "evidence": "agent fills 100% of rows 1-8; targets in 8 rows"
+  }
+ },
+ "c2b_erased_mix": {
+  "breakout": {
+   "guess": "unknown",
+   "correct": false,
+   "evidence": "agent fills 100% of rows 1-8; targets in 8 rows"
+  },
+  "pong": {
+   "guess": "unknown",
+   "correct": false,
+   "evidence": "agent fills 100% of rows 1-8; targets in 0 rows"
+  },
+  "pacman": {
+   "guess": "unknown",
+   "correct": false,
+   "evidence": "agent fills 100% of rows 1-8; targets in 8 rows"
+  },
+  "freeway": {
+   "guess": "unknown",
+   "correct": false,
+   "evidence": "agent fills 100% of rows 1-8; targets in 8 rows"
+  }
+ },
+ "c5_map_only": {
+  "breakout": {
+   "guess": "breakout",
+   "correct": true,
+   "evidence": "agent only in row 8, targets only in rows 1-3"
+  },
+  "pong": {
+   "guess": "pong",
+   "correct": true,
+   "evidence": "agent only in column 1"
+  },
+  "pacman": {
+   "guess": "pacman",
+   "correct": true,
+   "evidence": "agent visits 75% of its bounding box (walls)"
+  },
+  "freeway": {
+   "guess": "freeway",
+   "correct": true,
+   "evidence": "agent in 7 rows, targets only in row 1"
+  }
+ }
+}

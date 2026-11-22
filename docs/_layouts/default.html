@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script>
+    /* Apply a saved light/dark choice before the page draws (no flash). No choice: follow the system setting. */
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape | replace: '-', '&#8209;' }}</a>
+      <div class="site-actions">
+        {%- if site.repo_url %}
+        <a class="site-nav" href="{{ site.repo_url }}">Code<span class="nav-extra"> &amp; data</span></a>
+        {%- endif %}
+        <button class="theme-toggle" type="button" aria-label="Switch between light and dark mode" title="Light / dark" hidden>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 1.8v2.6M12 19.6v2.6M1.8 12h2.6M19.6 12h2.6M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M4.8 19.2l1.8-1.8M17.4 6.6l1.8-1.8"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      {%- if site.repo_url %}
+      <p>Code, prompts and every model answer: <a href="{{ site.repo_url }}">{{ site.repo_url | remove: 'https://' }}</a></p>
+      {%- endif %}
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var button = document.querySelector(".theme-toggle");
+      if (!button) return;
+      var root = document.documentElement;
+      var systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+      function isDark() {
+        var t = root.getAttribute("data-theme");
+        return t ? t === "dark" : systemDark.matches;
+      }
+      function update() {
+        button.setAttribute("aria-label", isDark() ? "Switch to light mode" : "Switch to dark mode");
+      }
+      button.addEventListener("click", function () {
+        var next = isDark() ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+        update();
+      });
+      systemDark.addEventListener("change", update);
+      button.hidden = false;   /* shown only when the script runs */
+      update();
+    })();
+  </script>
+</body>
+</html>

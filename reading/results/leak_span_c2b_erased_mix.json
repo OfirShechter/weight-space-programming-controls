@@ -1,0 +1,156 @@
+{
+ "freeway": {
+  "auc": 0.8891369047619048,
+  "best_threshold_acc": 0.8671875,
+  "base_rate": 0.65625,
+  "per_channel": {
+   "0": {
+    "n_dead": 8,
+    "auc": 0.953125,
+    "auc_norm": 0.4955357142857143,
+    "auc_maxabs": 0.5,
+    "auc_kurt": 0.5669642857142857,
+    "median_resid_dead": 0.04497784736010763,
+    "median_resid_trained": 0.5550611691774765
+   },
+   "1": {
+    "n_dead": 16,
+    "auc": 0.6497395833333334,
+    "auc_norm": 0.5729166666666666,
+    "auc_maxabs": 0.5104166666666666,
+    "auc_kurt": 0.5651041666666666,
+    "median_resid_dead": 0.08450557880587242,
+    "median_resid_trained": 0.13111326907697607
+   },
+   "2": {
+    "n_dead": 56,
+    "auc": 0.36830357142857145,
+    "auc_norm": 0.4888392857142857,
+    "auc_maxabs": 0.4832589285714286,
+    "auc_kurt": 0.5044642857142857,
+    "median_resid_dead": 0.05847465165384878,
+    "median_resid_trained": 0.05335911753901495
+   },
+   "4": {
+    "n_dead": 8,
+    "auc": 0.9598214285714286,
+    "auc_norm": 0.49330357142857145,
+    "auc_maxabs": 0.5078125,
+    "auc_kurt": 0.5200892857142857,
+    "median_resid_dead": 0.04954205568973367,
+    "median_resid_trained": 0.4775113691454679
+   }
+  }
+ },
+ "breakout": {
+  "auc": 0.8494119119119119,
+  "best_threshold_acc": 0.8359375,
+  "base_rate": 0.578125,
+  "per_channel": {
+   "0": {
+    "n_dead": 56,
+    "auc": 0.3236607142857143,
+    "auc_norm": 0.5513392857142857,
+    "auc_maxabs": 0.5825892857142857,
+    "auc_kurt": 0.6383928571428571,
+    "median_resid_dead": 0.0681285897704112,
+    "median_resid_trained": 0.05235935092833476
+   },
+   "1": {
+    "n_dead": 10,
+    "auc": 0.9407407407407408,
+    "auc_norm": 0.4648148148148148,
+    "auc_maxabs": 0.4111111111111111,
+    "auc_kurt": 0.4185185185185185,
+    "median_resid_dead": 0.044276581503350315,
+    "median_resid_trained": 0.34375815044554087
+   },
+   "2": {
+    "n_dead": 40,
+    "auc": 0.6072916666666667,
+    "auc_norm": 0.5375,
+    "auc_maxabs": 0.5125,
+    "auc_kurt": 0.4875,
+    "median_resid_dead": 0.05608004333965101,
+    "median_resid_trained": 0.06743598663851011
+   },
+   "4": {
+    "n_dead": 2,
+    "auc": 0.9838709677419355,
+    "auc_norm": 0.8548387096774194,
+    "auc_maxabs": 0.8629032258064516,
+    "auc_kurt": 0.43548387096774194,
+    "median_resid_dead": 0.09707804154246819,
+    "median_resid_trained": 0.43569341610578755
+   }
+  }
+ },
+ "pacman": {
+  "auc": 0.8812698412698413,
+  "best_threshold_acc": 0.828125,
+  "base_rate": 0.68359375,
+  "per_channel": {
+   "0": {
+    "n_dead": 16,
+    "auc": 0.9361979166666666,
+    "auc_norm": 0.5390625,
+    "auc_maxabs": 0.53125,
+    "auc_kurt": 0.4518229166666667,
+    "median_resid_dead": 0.04784815539674042,
+    "median_resid_trained": 0.6466095636448757
+   },
+   "1": {
+    "n_dead": 16,
+    "auc": 0.9296875,
+    "auc_norm": 0.5013020833333334,
+    "auc_maxabs": 0.5904947916666666,
+    "auc_kurt": 0.6940104166666666,
+    "median_resid_dead": 0.048450989054321235,
+    "median_resid_trained": 0.5344179189190349
+   },
+   "2": {
+    "n_dead": 33,
+    "auc": 0.7214076246334311,
+    "auc_norm": 0.5053763440860215,
+    "auc_maxabs": 0.4232649071358749,
+    "auc_kurt": 0.46529814271749753,
+    "median_resid_dead": 0.04929218102907426,
+    "median_resid_trained": 0.07873430708612529
+   },
+   "4": {
+    "n_dead": 16,
+    "auc": 0.8841145833333334,
+    "auc_norm": 0.4895833333333333,
+    "auc_maxabs": 0.4401041666666667,
+    "auc_kurt": 0.5013020833333334,
+    "median_resid_dead": 0.05478555180550646,
+    "median_resid_trained": 0.3797422975232809
+   }
+  }
+ },
+ "pong": {
+  "auc": 0.828369140625,
+  "best_threshold_acc": 0.8671875,
+  "base_rate": 0.5,
+  "per_channel": {
+   "0": {
+    "n_dead": 56,
+    "auc": 0.32589285714285715,
+    "auc_norm": 0.5,
+    "auc_maxabs": 0.45982142857142855,
+    "auc_kurt": 0.3638392857142857,
+    "median_resid_dead": 0.0746190760895385,
+    "median_resid_trained": 0.053768092351822436
+   },
+   "1": {
+    "n_dead": 8,
+    "auc": 0.9665178571428571,
+    "auc_norm": 0.39285714285714285,
+    "auc_maxabs": 0.36160714285714285,
+    "auc_kurt": 0.38839285714285715,
+    "median_resid_dead": 0.04669172653799695,
+    "median_resid_trained": 0.6220600392267873
+   }
+  }
+ }
+}

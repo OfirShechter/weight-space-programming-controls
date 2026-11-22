@@ -1,0 +1,5 @@
+# Everything that runs on a CPU: the reading experiments, the tables from saved results, and the figures.
+# Tested with Python 3.12, numpy 1.26 and matplotlib 3.9. The GPU runs have their own pinned environment:
+# editing/requirements-lock.txt
+numpy>=1.24
+matplotlib>=3.7

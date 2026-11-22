@@ -1,0 +1,5 @@
+# Same bytes on every platform: the prompt checksums (reading/data/prompts/SHA256SUMS) and the shell scripts need LF.
+* text=auto eol=lf
+*.png binary
+*.npz binary
+*.gz binary

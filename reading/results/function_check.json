@@ -1,0 +1,78 @@
+{
+ "breakout": {
+  "n_live_inputs": 157,
+  "n_dead_inputs": 316,
+  "c1_permuted": {
+   "live": 1.0,
+   "random": 1.0,
+   "one_dead": 1.0
+  },
+  "c2_erased": {
+   "live": 1.0,
+   "random": 0.63525,
+   "one_dead": 0.91275
+  },
+  "c5_map_only": {
+   "live": 0.19175,
+   "random": 0.21125,
+   "one_dead": 0.19275
+  }
+ },
+ "pong": {
+  "n_live_inputs": 171,
+  "n_dead_inputs": 328,
+  "c1_permuted": {
+   "live": 1.0,
+   "random": 1.0,
+   "one_dead": 1.0
+  },
+  "c2_erased": {
+   "live": 1.0,
+   "random": 0.66975,
+   "one_dead": 0.9405
+  },
+  "c5_map_only": {
+   "live": 0.18475,
+   "random": 0.16375,
+   "one_dead": 0.18475
+  }
+ },
+ "pacman": {
+  "n_live_inputs": 175,
+  "n_dead_inputs": 289,
+  "c1_permuted": {
+   "live": 1.0,
+   "random": 1.0,
+   "one_dead": 1.0
+  },
+  "c2_erased": {
+   "live": 1.0,
+   "random": 0.673,
+   "one_dead": 0.9455
+  },
+  "c5_map_only": {
+   "live": 0.2195,
+   "random": 0.2,
+   "one_dead": 0.2165
+  }
+ },
+ "freeway": {
+  "n_live_inputs": 204,
+  "n_dead_inputs": 296,
+  "c1_permuted": {
+   "live": 1.0,
+   "random": 1.0,
+   "one_dead": 1.0
+  },
+  "c2_erased": {
+   "live": 1.0,
+   "random": 1.0,
+   "one_dead": 1.0
+  },
+  "c5_map_only": {
+   "live": 0.11725,
+   "random": 0.10675,
+   "one_dead": 0.11825
+  }
+ }
+}
